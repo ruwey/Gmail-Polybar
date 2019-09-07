@@ -8,7 +8,7 @@
 apply plugin: 'java'
 apply plugin: 'application'
 
-mainClassName = 'EchoArgs'
+mainClassName = 'GmailPolybar'
 
 repositories {
     mavenCentral()
@@ -21,6 +21,6 @@ dependencies {
 }
 
 jar {
-    manifest.attributes "Main-Class": "EchoArgs"
+    manifest.attributes "Main-Class": "GmailPolybar"
     from configurations.compile.collect { zipTree it }
 }

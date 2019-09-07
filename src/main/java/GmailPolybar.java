@@ -23,7 +23,7 @@ import java.security.GeneralSecurityException;
 import java.util.Collections;
 import java.util.List;
 
-class EchoArgs {
+class GmailPolybar {
 
     // Variables:
     private static final String credPath = "/credentials.json";
@@ -73,7 +73,7 @@ class EchoArgs {
     }
 
     static Credential getCreds(final HttpTransport httpTransport) throws IOException {
-        InputStream in = EchoArgs.class.getResourceAsStream(credPath);
+        InputStream in = GmailPolybar.class.getResourceAsStream(credPath);
         if (in == null) {
             throw new FileNotFoundException("Reasource not found " + credPath);
         }
