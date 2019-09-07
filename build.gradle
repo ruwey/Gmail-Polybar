@@ -8,7 +8,7 @@
 apply plugin: 'java'
 apply plugin: 'application'
 
-mainClassName = 'main.EchoArgs'
+mainClassName = 'EchoArgs'
 
 repositories {
     mavenCentral()
