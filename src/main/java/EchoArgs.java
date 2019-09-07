@@ -27,7 +27,7 @@ class EchoArgs {
 
     // Variables:
     private static final String credPath = "/credentials.json";
-    private static final String tokenPath = "tokens";
+    private static final String tokenPath = System.getenv("HOME") + "/.config/polybar/Gmail-Polybar/tokens";
     private static final JsonFactory jsonFactory = JacksonFactory.getDefaultInstance();
     private static final List<String> SCOPE = Collections.singletonList(GmailScopes.GMAIL_LABELS);
     private static final String appName = "Polybar Gmail Unread";
